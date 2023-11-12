@@ -54,7 +54,8 @@ export default function Home() {
   
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+      <div className="z-10 max-w-5xl w-full justify-between font-mono text-sm lg:flex flex-col items-start">
+        <h2 className='flex'>Your save file is located at C:\Program File (x86)\Steam\userdata\1337520\save.json</h2>
         {!originalUserSaveFile && <input className='flex my-8 rounded p-2 bg-gray-300 text-gray-800' type="file" onChange={handleFileChange} />}
         {originalUserSaveFile && <button className='flex my-8 rounded p-2 bg-gray-300 text-gray-800' onClick={exportSaveFile(originalUserSaveFile)}>Export original save file</button> }
         {newSaveFile && <button className='flex my-8 rounded p-2 bg-gray-300 text-gray-800' onClick={exportSaveFile(newSaveFile)}>Export modded save file</button> }
