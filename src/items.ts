@@ -1019,8 +1019,8 @@ const ITEMS = {
     "fullDescription": "Hold the jump button to <blue>fly</blue> for up to <yellow>1.6</yellow> <gray>(+0.8 per stack) </gray><green>seconds</green>. Recharges over <yellow>1.6 seconds</yellow>.",
     "category": "Utility",
     "unlock": [
-      "challenge_unlock_photon_jetpack_completed",
-      "challenge_unlock_photon_jetpack_viewed"
+      "pickup_photonJetpack_got",
+      "pickup_photonJetpack_viewed"
     ],
     "achievement": [
       "pickup_theHitList_got",
@@ -1391,8 +1391,8 @@ const ITEMS = {
       "challenge_unlock_shield_generator_viewed"
     ],
     "achievement": [
-      "challenge_unlock_shield_generator_completed",
-      "challenge_unlock_shield_generator_viewed"
+      "pickup_shieldGenerator_got",
+      "pickup_shieldGenerator_viewed"
     ]
   },
   "unstableWatch": {
