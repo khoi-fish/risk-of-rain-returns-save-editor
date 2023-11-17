@@ -1060,6 +1060,7 @@ const ITEMS = {
     "pickupText": "Fight fire with fire..",
     "fullDescription": "Walking leaves behind a <gray>fire trail</gray> that burns for <yellow>35%</yellow> <gray>(+20% per stack) </gray><green>damage</green>.",
     "category": "Damage",
+    "unlock": ["challenge_unlock_firemans_completed", "challenge_unlock_firemans_viewed"],
     "achievement": [
       "pickup_firemansBoots_got",
       "pickup_firemansBoots_viewed"
