@@ -1,3 +1,4 @@
+import { ITEMS } from '@/items';
 import z from 'zod'
 
 const SURVIVORS = {
@@ -89,6 +90,8 @@ const SURVIVOR_ALT_SPECIAL_SKILLS = {
   "Pilot Special Alt": "challenge_unlock_pilot_v2_completed",
 } as const;
 
+
+
 const SurvivorsEnum = z.nativeEnum(SURVIVORS)
 type SurvivorsEnum = z.infer<typeof SurvivorsEnum>
 
@@ -107,6 +110,9 @@ type SurvivorUnlocksAltUtilityEnum = z.infer<typeof SurvivorUnlocksAltUtilityEnu
 const SurvivorUnlocksAltSpecialEnum = z.nativeEnum(SURVIVOR_ALT_SPECIAL_SKILLS)
 type SurvivorUnlocksAltSpecialEnum = z.infer<typeof SurvivorUnlocksAltSpecialEnum>
 
+type ItemsKey =  keyof typeof ITEMS
+type ItemsValue = typeof ITEMS[ItemsKey]
+
 
 const ALL_SURVIVOR_SKILLS = {
   ...SURVIVOR_ALT_PRIMARY_SKILLS,
@@ -124,7 +130,8 @@ export {
   SURVIVOR_ALT_PRIMARY_SKILLS,
   SURVIVOR_ALT_SECONDARY_SKILLS,
   SURVIVOR_ALT_UTILITY_SKILLS,
-  SURVIVOR_ALT_SPECIAL_SKILLS
+  SURVIVOR_ALT_SPECIAL_SKILLS,
+  ITEMS
 }
 
 export type {
@@ -134,5 +141,7 @@ export type {
   SurvivorUnlocksAltPrimaryEnum,
   SurvivorUnlocksAltSecondaryEnum,
   SurvivorUnlocksAltUtilityEnum,
-  SurvivorUnlocksAltSpecialEnum
+  SurvivorUnlocksAltSpecialEnum,
+  ItemsKey,
+  ItemsValue,
 }

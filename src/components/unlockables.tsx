@@ -1,4 +1,4 @@
-import { SURVIVORS, SURVIVOR_ALT_PRIMARY_SKILLS, SURVIVOR_ALT_SECONDARY_SKILLS, SURVIVOR_ALT_SPECIAL_SKILLS, SURVIVOR_ALT_UTILITY_SKILLS, SURVIVOR_UNLOCKS } from "@/app/flag-options";
+import { ITEMS, SURVIVORS, SURVIVOR_ALT_PRIMARY_SKILLS, SURVIVOR_ALT_SECONDARY_SKILLS, SURVIVOR_ALT_SPECIAL_SKILLS, SURVIVOR_ALT_UTILITY_SKILLS, SURVIVOR_UNLOCKS } from "@/app/flag-options";
 import { SaveFile } from "@/app/validation/save-file-schema";
 
 const UnlockablesList: React.FC<{ saveFile: SaveFile }> = ({ saveFile }) => {
